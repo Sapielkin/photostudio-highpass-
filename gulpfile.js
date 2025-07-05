@@ -20,7 +20,7 @@ const loadImageModule = async () => {
   image = (await import('gulp-image')).default;
 };
 
-// Задача для очистки папки 'dist' перед новой сборкой
+// Задача для очистки папки 'app' перед новой сборкой
 const clean = () => {
   return del(['dist/*']);
 };
@@ -37,7 +37,7 @@ const svgSprites = () => {
         },
       })
     )
-    .pipe(dest('./dist/img')); // Вывод спрайтов в папку 'dist/img'
+    .pipe(dest('./dist/img')); // Вывод спрайтов в папку 'app/img'
 };
 
 // Задача для обработки CSS файлов: добавление префиксов, минификация, объединение
@@ -52,7 +52,7 @@ const styles = () => {
     .pipe(cleanCSS({ level: 2 })) // Минификация CSS с уровнем сжатия 2
     .pipe(concat('style.css')) // Объединение всех стилей в один файл
     .pipe(sourcemaps.write('.')) // Генерация карт исходных файлов
-    .pipe(dest('./dist/css/')) // Вывод стилей в папку dist/css
+    .pipe(dest('./app/css/')) // Вывод стилей в папку app/css
     .pipe(browserSync.stream()); // Автоматическое обновление браузера
 };
 
@@ -68,13 +68,13 @@ const scripts = () => {
     .pipe(concat('main.js')) // Объединение всех скриптов в один файл
     .pipe(uglify().on('error', notify.onError())) // Минификация с уведомлением об ошибках
     .pipe(sourcemaps.write('.')) // Генерация карт исходных файлов
-    .pipe(dest('./dist/js')) // Вывод скриптов в папку dist/js
+    .pipe(dest('./app/js')) // Вывод скриптов в папку app/js
     .pipe(browserSync.stream()); // Автоматическое обновление браузера
 };
 
 // Задача для копирования дополнительных ресурсов (например, шрифты, иконки)
 const resources = () => {
-  return src('./src/resources/**').pipe(dest('./dist')); // Копирование ресурсов в папку dist
+  return src('./src/resources/**').pipe(dest('./app')); // Копирование ресурсов в папку app
 };
 
 // Асинхронная задача для обработки изображений: оптимизация и копирование
@@ -91,14 +91,14 @@ const img = async () => {
     './src/img/**/*.webp',
   ])
     .pipe(image()) // Оптимизация изображений
-    .pipe(dest('./dist/img')); // Вывод изображений в папку dist/img
+    .pipe(dest('./app/img')); // Вывод изображений в папку app/img
 };
 
 // Задача для наблюдения за изменениями файлов и автоматического выполнения задач
 const watchFiles = () => {
   browserSync.init({
     server: {
-      baseDir: './dist', // Базовая директория для сервера
+      baseDir: './app', // Базовая директория для сервера
     },
   });
 
@@ -119,7 +119,7 @@ const htmlMinify = () => {
         collapseWhitespace: true, // Удаление пробелов и переносов строк
       })
     )
-    .pipe(dest('dist')) // Вывод минифицированных HTML-файлов в папку dist
+    .pipe(dest('dist')) // Вывод минифицированных HTML-файлов в папку app
     .pipe(browserSync.stream()); // Автоматическое обновление браузера
 };
 

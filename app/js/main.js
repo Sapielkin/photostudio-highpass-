@@ -1,2 +1,0 @@
-"use strict";document.addEventListener("DOMContentLoaded",(function(){var e={burgerContainer:document.querySelector(".header__burger-menu"),headerBurger:document.querySelector(".header__burger-button"),buttonClose:document.querySelector(".header__burger-close")};e.buttonClose.addEventListener("click",(function(){gsap.to(e.burgerContainer,{duration:.3,top:"-100vh",opacity:0,ease:"power2.in"})})),e.headerBurger.addEventListener("click",(function(){gsap.to(e.burgerContainer,{duration:.3,top:"0",opacity:1,ease:"power2.in"})}))}));
-//# sourceMappingURL=main.js.map
