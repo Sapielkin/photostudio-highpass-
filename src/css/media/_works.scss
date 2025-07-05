@@ -1,0 +1,207 @@
+@import'../variables';
+
+@media(max-width:1900px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .works {
+        &__container {
+            padding-top: 34px;
+            padding-left: 31px;
+            
+        }
+
+        &__announcement-cont {
+            padding-left: 30px;
+            max-height: 623px;
+            max-width: 466px;
+            background-image: url(../../img/announcement_1024img.jpg);
+        }
+
+        &__announcment-master {
+            padding-top: 425px;
+        }
+
+        &__announsment-event {
+            padding-top: 9px;
+            margin-bottom: 22px;
+            font-size: 34px;
+        }
+
+        &__previous-cont {
+            max-height: 623px;
+            max-width: 466px;
+            gap: 25px;
+        }
+
+        &__previous-list {
+            grid-template-rows: 332px 186px;
+
+        }
+
+        &__previous-item:nth-child(1) {
+            height: 332px;
+            width: 466px;
+            background-image: url(../../img/works1_1024img.jpg);
+        }
+
+        &__previous-item:nth-child(2) {
+
+            height: 186px;
+            width: 218px;
+            background-image: url(../../img/works2_1024img.jpg);
+        }
+
+        &__previous-item:nth-child(3) {
+            height: 186px;
+            width: 218px;
+            background-image: url(../../img/works3_1024img.jpg);
+        }
+
+    }
+}
+
+@media(max-width:1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .works {
+        &__container {
+            padding-left: 27px;
+        }
+
+        &__announcement-cont {
+            max-height: 452px;
+            max-width: 342px;
+            background-image: url(../../img/announcement_768img.jpg);
+        }
+
+        &__announcment-master {
+            padding-top: 223px;
+        }
+
+        &__announsment-event {
+            padding-top: 14px;
+            margin-bottom: 23px;
+        }
+
+        &__previous-cont {
+            max-height: 452px;
+            max-width: 342px;
+            gap: 17px;
+        }
+
+        &__previous-title {
+            font-size: 22px;
+        }
+
+        &__previous-list {
+            grid-template-rows: 228px 156px;
+
+        }
+
+        &__previous-item:nth-child(1) {
+            height: 228px;
+            width: 342px;
+            background-image: url(../../img/works1_768img.jpg);
+        }
+
+        &__previous-item:nth-child(2) {
+
+            height: 133px;
+            width: 156px;
+            background-image: url(../../img/works2_768img.jpg);
+        }
+
+        &__previous-item:nth-child(3) {
+            height: 133px;
+            width: 156px;
+            background-image: url(../../img/works3_768img.jpg);
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .cantainer {
+        max-width: 320px;
+    }
+
+    .works {
+        &__container {
+            flex-direction: column;
+            padding-top: 30px;
+            padding-left: 21px;
+            padding-bottom: 0;
+            gap: 34px;
+        }
+
+        &__announcement-cont {
+            max-width: 278px;
+            max-height: 422px;
+            background-image: url(../../img/annpuncement_320img.jpg);
+        }
+
+        &__announcement-hashtag {
+            padding: 4px 7px;
+            width: 95px;
+            height: 22px;
+        }
+
+        &__announcement-link {
+            font-size: 12px;
+        }
+
+        &__announcment-master {
+            padding-top: 204px;
+            font-size: 14px;
+        }
+
+        &__announcement-event {
+            padding-top: 10px;
+            margin-bottom: 14px;
+            font-size: 24px;
+            line-height: 110%;
+        }
+
+        &__announcement-button {
+            font-size: 14px;
+            width: 145px;
+            height: 40px;
+        }
+
+        &__previous-cont {
+            max-height: 422px;
+            max-width: 278px;
+            gap: 16px;
+        }
+
+        &__previous-title {
+            font-size: 18px;
+        }
+
+        &__previous-list {
+            grid-template-rows: 186px 105px;
+        }
+
+        &__previous-item:nth-child(1) {
+            height: 186px;
+            width: 278px;
+            background-image: url(../../img/works1_320img.jpg);
+        }
+
+        &__previous-item:nth-child(2) {
+            height: 105px;
+            width: 124px;
+            background-image: url(../../img/works2_320img.jpg);
+        }
+
+        &__previous-item:nth-child(3) {
+            height: 105px;
+            width: 124px;
+            background-image: url(../../img/works3_320img.jpg);
+
+        }
+    }
+}

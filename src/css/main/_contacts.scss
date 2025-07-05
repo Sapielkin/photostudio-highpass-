@@ -1,0 +1,138 @@
+@import'../variables';
+
+.contacts {
+    &__title {
+        padding-top: 68px;
+        margin-bottom: 16px;
+        font-family: $second-family;
+        font-weight: 700;
+        font-size: 24px;
+        color: #202020;
+    }
+
+    &__container {
+        display: flex;
+        gap: 30px;
+        padding-bottom: 69px;
+    }
+
+    &__loc-cont {
+        position: relative;
+        height: 460px;
+        width: 850px;
+        margin-top: 6px;
+        background-image: url(../../img/contacts_map.jpg);
+    }
+
+    &__address {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(32, 32, 32, 0.85);
+        width: 410px;
+        height: 460px;
+        padding: 175px 50px 150px 60px;
+
+    }
+
+    &__address-title {
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 92%;
+        color: #fff;
+    }
+
+    &__address-txt {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        color: #cacaca;
+    }
+
+    &__address-tel {
+        display: flex;
+        align-content: center;
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 16px;
+        color: #ff6e30;
+    }
+
+    &__form-cont {
+        height: 467px;
+        width: 410px;
+    }
+
+    &__form-title {
+        margin-bottom: 5px;
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 92%;
+        color: #202020;
+    }
+
+    &__form-txt {
+        margin-bottom: 14px;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 137%;
+        color: #999;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    &__form-name {
+        padding: 15px 23px;
+        outline: none;
+        border: none;
+        height: 50px;
+        background: #e9e9e9;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        color: #999;
+    }
+
+    &__form-email {
+        padding: 15px 23px;
+        outline: none;
+        border: none;
+        height: 50px;
+        background: #e9e9e9;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        color: #999;
+    }
+
+    &__form-comment {
+        padding: 15px 23px;
+        outline: none;
+        border: none;
+        height: 150px;
+        background: #e9e9e9;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        color: #999;
+
+    }
+
+
+
+    &__form-button {
+        padding: 15px 22px;
+        width: 126px;
+        height: 50px;
+        background: #ff6e30;
+    }
+}

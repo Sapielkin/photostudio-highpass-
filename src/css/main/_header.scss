@@ -1,0 +1,54 @@
+@import'../variables';
+
+
+.header {
+    background-color: #202020;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 80px;
+    }
+
+    &__burger-menu {
+        display: none;
+    }
+
+    &__nav-list {
+        display: flex;
+        gap: 79px;
+        flex-direction: row;
+    }
+
+    &__nav-link {
+        font-family: $second-family;
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+    }
+
+   
+
+
+    &__search-container {
+        position: relative;
+        height: 25px;
+        width: 25px;
+    }
+
+    &__search-button {
+        border: none;
+
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url("../img/sprite.svg#search") no-repeat center center;
+        background-size: cover;
+    }
+
+
+}

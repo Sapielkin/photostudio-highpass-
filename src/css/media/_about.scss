@@ -1,0 +1,142 @@
+@import'../variables';
+
+@media(max-width:1900px) {
+    .container {
+        max-width: 1024px;
+    }
+
+    .about {
+        &__container {
+            padding-left: 31px;
+            padding-bottom: 68px;
+        }
+
+        &__txt-cont {
+            height: 560px;
+            width: 466px;
+        }
+
+        &__form-cont {
+            padding-top: 33px;
+            height: 560px;
+            width: 466px;
+        }
+
+        &__form-img {
+            margin-bottom: 24px;
+            height: 332px;
+            width: 466px;
+            background-image: url(../../img/about_form_1024img.jpg);
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__subscribe-input {
+            width: 342px;
+            height: 50px;
+        }
+
+        &__subscribe-button {
+            width: 126px;
+            height: 50px;
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .about {
+        &__container {
+            padding-left: 27px;
+            padding-bottom: 49px;
+        }
+
+        &__txt-cont {
+            height: 805px;
+            width: 342px;
+        }
+
+        &__form-cont {
+            height: 805px;
+            width: 342px;
+        }
+
+        &__form-img {
+            width: 342px;
+            height: 569px;
+            background-image: url(../../img/about_form_768img.jpg);
+        }
+    }
+
+}
+
+@media(max-width:768px) {
+    .container {
+        max-width: 320px;
+    }
+
+    .about {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            padding-top: 32px;
+            padding-left: 21px;
+            padding-bottom: 60px;
+            gap: 18px;
+        }
+
+        &__txt-cont {
+            height: 724px;
+            width: 278px;
+
+        }
+
+        &__txt-title {
+            font-size: 18px;
+        }
+
+        &__txt-txt {
+            font-size: 14px;
+            line-height: 179%;
+        }
+
+        &__form-cont {
+            padding-top: 0;
+            height: 440px;
+        }
+
+        &__form-img {
+            height: 278px;
+            width: 278px;
+            margin-bottom: 26px;
+            background-image: url(../../img/about_form_320img.jpg);
+        }
+
+        &__form-title {
+            font-size: 18px;
+            line-height: 122%;
+        }
+
+        &__form {
+            gap: 20px;
+        }
+
+        &__subscribe-input {
+            width: 278px;
+            height: 40px;
+        }
+
+        &__subscribe-button {
+            width: 115px;
+            height: 40px;
+            font-size: 14px;
+        }
+    }
+}
